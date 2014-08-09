@@ -12,7 +12,7 @@ datetime <- paste(as.Date(sub_data$Date), sub_data$Time); sub_data$Datetime <- a
 
 ## Creating plot 3 object
 with(sub_data, {  
-                plot(Sub_metering_1~Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+                plot(Sub_metering_1~Datetime, type="l", ylab="Energy sub metering", xlab="")
                 lines(Sub_metering_2~Datetime,col='Red'); lines(Sub_metering_3~Datetime,col='Blue') #adding lines
            }
      )
